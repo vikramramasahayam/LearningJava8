@@ -1,4 +1,4 @@
-package com.coldlight.test;
+package com.vik.test;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

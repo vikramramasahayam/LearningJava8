@@ -1,4 +1,4 @@
-package com.coldlight.test;
+package com.vik.test;
 
 import static org.apache.commons.lang3.ArrayUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;

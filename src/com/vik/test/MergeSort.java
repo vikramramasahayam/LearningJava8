@@ -1,4 +1,4 @@
-package com.coldlight.test;
+package com.vik.test;
 
 /*
  * Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.

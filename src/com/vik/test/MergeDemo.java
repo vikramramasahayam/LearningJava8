@@ -1,4 +1,4 @@
-package com.coldlight.test;
+package com.vik.test;
 
 import static java.lang.Integer.parseInt;
 

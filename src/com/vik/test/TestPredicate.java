@@ -1,4 +1,4 @@
-package com.coldlight.test;
+package com.vik.test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
