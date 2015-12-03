@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.SortedMap;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -60,6 +61,17 @@ public class Main {
 
         System.out.println("-----------------");
         persons.stream().map(p -> p.getName()).forEachOrdered(e -> System.out.println(e));
+
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 5);
+
+        BinaryOperator<Integer> sum = (a, b) -> a + b;
+
+        Integer total = numbers.stream().reduce(sum).get();
+        System.out.println("Total is :  " + total);
+
+        Integer total1 = numbers.stream().reduce(-1, sum);
+
+        System.out.println("Total1 is : " + total1);
 
     }
 
