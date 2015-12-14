@@ -3,6 +3,7 @@ package com.vik.test;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FunctionalProgramming {
 
@@ -10,6 +11,10 @@ public class FunctionalProgramming {
         List<String> myList = Arrays.asList("a1", "b1", "c3", "c1", "c2");
 
         myList.stream().filter(s -> s.startsWith("c")).map(String::toUpperCase).sorted().forEach(System.out::println);
+
+        List<String> newList = myList.stream().filter(s -> s.startsWith("c")).map(String::toUpperCase).collect(Collectors.toList());
+
+        System.out.println("New List : " + newList);
 
         myList.forEach(System.out::println);
 
