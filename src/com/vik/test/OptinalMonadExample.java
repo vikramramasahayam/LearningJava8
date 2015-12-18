@@ -25,6 +25,13 @@ public class OptinalMonadExample {
                 System.out.println(" Printing City : " + c);
             });
         });
+
+        // Optinal.ofNullable doesn't work for primitives. So need ot use OptinalInt
+        names.stream().forEach((n) -> {
+            personMap.find(n).flatMap(p -> p.getAddress()).flatMap(a -> a.getZipCode()).ifPresent((z) -> {
+                System.out.println(" Printing City : " + z);
+            });
+        });
     }
 
     public static class Map<T, U> extends HashMap<T, U> {
