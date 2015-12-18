@@ -8,7 +8,7 @@ public class ConvertListObjectToArrayObject {
 
     public static void main(String[] args) {
 
-        List<String> names = Arrays.asList("vikram", "uma", "Anusha");
+        List<String> names = Arrays.asList("jack", "Joe", "ray");
 
         Student[] students = names.stream().map((name) -> {
             return new Student(name);
